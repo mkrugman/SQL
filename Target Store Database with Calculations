@@ -1,0 +1,27 @@
+--Create a Target Store database
+
+CREATE TABLE Target (id INTEGER PRIMARY KEY, item TEXT, aisle TEXT, price INTEGER, priority INTEGER);
+
+INSERT into Target VALUES (1, "Cotton pads", "Health" , 2.99, 6); 
+INSERT into Target VALUES (2, "Detergent", "Cleaning", 9.99, 9);
+INSERT into Target VALUES (3, "Green grapes", "Produce", 3.59, 2); 
+INSERT into Target VALUES (4, "Ground turkey", "Meat", 3.99, 1);
+INSERT into Target VALUES (5, "Strawberries", "Produce", 2.99, 3);
+INSERT into Target VALUES (6, "Mascara", "Beauty", 9.99, 4);
+INSERT into Target VALUES (7, "Tide stick", "Cleaning", 2.79, 5);
+INSERT into Target VALUES (8, "Sparkling water","Beverages", 5.99, 7);
+INSERT into Target VALUES (9, "Coke zero", "Beverages", 3.99, 8);
+INSERT into Target VALUES (10, "Yogurt", "Dairy", 2.99, 10);
+
+--Display database ordered by priority
+
+SELECT * FROM Target
+ORDER BY priority asc;
+
+--Display database grouped by aisle
+SELECT * FROM Target
+GROUP BY aisle;
+
+--What is the total price of this trip? 
+SELECT SUM(price) AS Total FROM Target;
+SELECT ROUND(49.30000000000001,2);
