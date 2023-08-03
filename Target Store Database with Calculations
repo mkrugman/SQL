@@ -14,7 +14,6 @@ INSERT into Target VALUES (9, "Coke zero", "Beverages", 3.99, 8);
 INSERT into Target VALUES (10, "Yogurt", "Dairy", 2.99, 10);
 
 --Display database ordered by priority
-
 SELECT * FROM Target
 ORDER BY priority asc;
 
