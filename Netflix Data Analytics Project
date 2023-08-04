@@ -65,7 +65,6 @@ VALUES
 
 SELECT people.show_id, 
 people.director, 
-titles.show_id, 
 titles.type, 
 titles.release_year, 
 titles.date_added
@@ -91,10 +90,30 @@ SELECT * FROM "netflix_titles_info" ORDER BY date_added desc
 Select * FROM "netflix_titles_info" ORDER BY title asc;
 
 
+--To figure out who the Director is for the movie The Starling
+
+SELECT
+a.director,
+b.title
+FROM
+"netflix_people" a 
+INNER JOIN
+"netflix_titles_info" b
+ON
+a.show_id=b.show_id
+WHERE
+title = 'The Starling';
 
 
+--To figure out the oldest movie in the database and the year it was made
 
-
+SELECT title, release_year 
+FROM "netflix_titles_info"
+WHERE type = 'Movie'
+AND release_year <= 
+(SELECT MIN(release_year) 
+FROM "netflix_titles_info"
+WHERE type = 'Movie'); 
 
 
 
