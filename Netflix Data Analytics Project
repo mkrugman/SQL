@@ -76,6 +76,21 @@ LEFT JOIN
 ON people.show_id=titles.show_id;
 
 
+--To find the number of movies in this database
+
+SELECT * FROM "netflix_titles_info" WHERE type = 'Movie'
+
+
+--To find the most recent batch of tv shows and/or movies added to the database?
+
+SELECT * FROM "netflix_titles_info" ORDER BY date_added desc
+
+
+--To list all the movies and tv shows in alphabetical order
+
+Select * FROM "netflix_titles_info" ORDER BY title asc;
+
+
 
 
 
