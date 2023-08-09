@@ -66,7 +66,7 @@ WHERE location like '%Los Angeles%'
 GROUP BY Product
 
 
---Which locations in New York received at least 3 orders in January, and how many orders did they each receive? (Hint: use HAVING).
+--Which locations in New York received at least 3 orders in January, and how many orders did they each receive? 
 
 SELECT distinct location,count(orderid)
 FROM JanSales
@@ -86,7 +86,7 @@ WHERE product like '%headphones%'
 GROUP BY product
 
 
---What was the average amount spent per account in February? (Hints: For this question, we want the average amount spent / number of accounts, not the amount spent by each account. To multiply, you can use the * symbol, and to divide, you can use the / symbol.)
+--What was the average amount spent per account in February?
 
 SELECT sum(quantity*price)/count(cust.acctnum)
 FROM FebSales Feb
@@ -96,9 +96,8 @@ WHERE length(orderid) = 6
 AND orderid <> 'Order ID'
 
 
---What was the average quantity of products purchased per account in February? (Hint: just like question 3, we want the overall average, not the average for each account individually).
-Which product brought in the most revenue in January and how much revenue did it bring in total?
-
+#The following SQL queries are a demonstration of how I could use SQL to answer business problems by finding specific information from a database.
+Within these queries, I utilized SQL to implement clustering algorithms in several ways, such as grouping customers based on their purchasing behavior or calculating specific sales numbers for different products
 
 
 
