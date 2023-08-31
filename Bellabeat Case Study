@@ -17,9 +17,9 @@ FROM `bellabeat-case-study-397404.FitBase_Data.Daily_intensities`;
 --Seeing how daily steps compare to daily caloric intake
 
 SELECT PersonID, StepTotal, Calories
-FROM `bellabeat-case-study-397404.FitBase_Data.Daily_calories`
-INNER JOIN `bellabeat-case-study-397404.FitBase_Data.Daily_Steps`
-ON `bellabeat-case-study-397404.FitBase_Data.Daily_calories`.PersonID = `bellabeat-case-study 397404.FitBase_Data.Daily_Steps`.Person_id;
+FROM `bellabeat-case-study-397404.FitBase_Data.Daily_calories` cals
+INNER JOIN `bellabeat-case-study-397404.FitBase_Data.Daily_Steps` Steps
+ON cals.PersonID = Steps.Person_id;
 
 
 --Finding the total amount of minutes reported for each activity and grouping each time by individual
