@@ -1,8 +1,16 @@
-Case Study: How can a wellness company play it smart?
-
 The following case study is from the Google Data Analytics Course. In this study, I will be performing tasks and asking key business questions similar to those of a junior data analyst. 
 
-The case is for Bellabeat, a high-tech manufacturer of health-focused products for women, and I will be using a dataset from Kaggle.
+Questions to answer:
+
+1. What are some trends in smart device usage?
+2. How could these trends apply to Bellabeat customers?
+3. How could these trends help influence Bellabeat marketing strategy?
+
+SQL code I wrote in BigQuery to answer the questions:
+
+
+
+
 
 
 
