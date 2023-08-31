@@ -6,16 +6,19 @@ Key questions asked by the company in this study:
 
 SQL codes I wrote that could be helpful in answering this question:
 
-Finding the average amount of minutes reported for each type of activity
+--Finding the average amount of minutes reported for each type of activity
 
 SELECT avg(SedentaryMinutes) AS Average_Sedentary_Minutes, 
 avg(LightlyActiveMinutes) AS Average_Lightly_Active_Minutes,
 avg(FairlyActiveMinutes) AS Average_Fairly_Active_Minutes,
 avg(VeryActiveMinutes) AS Average_Very_Active_Minutes
-FROM `bellabeat-case-study-397404.FitBase_Data.Daily_intensities`
-END
+FROM `bellabeat-case-study-397404.FitBase_Data.Daily_intensities`;
 
-Finding the sum of all the time spent on every type of activity and compare it to the calorie intake of each person
+--Finding the total amount of minutes reported for each activity and grouping each time by individual
+
+
+
+--Finding the sum of all the time spent on every type of activity and comparing it to the calorie intake of each individual
 
 SELECT Id, sum(VeryActiveMinutes + FairlyActiveMinutes + LightlyActiveMinutes + SedentaryMinutes) AS Total_Minutes_Of_Activity,Calories 
 FROM `bellabeat-case-study-397404.FitBase_Data.Daily_activity`
@@ -24,8 +27,9 @@ VeryActiveMinutes,
 FairlyActiveMinutes, 
 LightlyActiveMinutes, 
 SedentaryMinutes,
-Calories
-END
+Calories;
+
+
 
 
 
