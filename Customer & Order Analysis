@@ -1,5 +1,5 @@
-#The following SQL queries are a demonstration of how I could use SQL to answer business problems by finding specific information from a database. Within these queries, I utilized SQL to implement clustering algorithms in several ways, such as grouping customers based on their purchasing behavior or calculating specific sales numbers for different products
-
+#The following SQL queries are a demonstration of how I could use SQL to answer business problems by finding specific information from a database. 
+Within these queries, I utilized SQL to implement clustering algorithms in several ways, such as grouping customers based on their purchasing behavior or calculating specific sales numbers for different products
 
 --How many orders were placed in January?
 
