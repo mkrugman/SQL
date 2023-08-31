@@ -1,10 +1,9 @@
-The Bellabeat case study is from the Google Data Analytics Course. In this study, I will be using SQL to help answer key business questions 
+#The Bellabeat case study is from the Google Data Analytics Course. 
+In this case study, I will demonstrate how I can use SQL to help answer a key business question for a company I work for.
 
-Key questions asked by the company in this study:
+The question asked by the company: What are some trends in smart device usage?
 
-1. What are some trends in smart device usage?
-
-SQL codes I wrote that could be helpful in answering this question:
+Here are the SQL codes I wrote that could be helpful in answering this question:
 
 --Finding the average amount of minutes reported for each type of activity
 
@@ -22,9 +21,12 @@ INNER JOIN `bellabeat-case-study-397404.FitBase_Data.Daily_Steps` Steps
 ON cals.PersonID = Steps.Person_id;
 
 
---Finding the total amount of minutes reported for each activity and grouping each time by individual
+--Finding the total amount of steps reported per individual
 
-
+SELECT Person_id, 
+SUM(StepTotal) AS Total_Steps 
+FROM `bellabeat-case-study-397404.FitBase_Data.Daily_Steps`
+Group By Person_id;
 
 
 --Finding the sum of all the time spent on every type of activity and comparing it to the calorie intake of each individual
@@ -38,22 +40,6 @@ LightlyActiveMinutes,
 SedentaryMinutes,
 Calories;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2. How could these trends apply to Bellabeat customers?
-3. How could these trends help influence Bellabeat marketing strategy?
 
 
 
