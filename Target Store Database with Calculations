@@ -1,3 +1,5 @@
+#The following SQL queries demonstrate how I would select specific information from a table that I created.
+
 --Create a Target Store database
 
 CREATE TABLE Target (id INTEGER PRIMARY KEY, item TEXT, aisle TEXT, price INTEGER, priority INTEGER);
