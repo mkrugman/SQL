@@ -1,4 +1,4 @@
---Show a list of Customers (their full names, customer ID, and country) who are not in the US. 
+--Show a list of customers (their full names, customer ID, and country) who are not in the US. 
 
 SELECT CustomerID,FirstName,LastName,Country
 FROM chinook.customers
