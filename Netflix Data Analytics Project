@@ -1,4 +1,4 @@
-# This project reveals insights about TV and Movie content hosted on Netflix. The SQL code I have written answers a few questions I came up with after viewing the dataset.
+# This project shows insights about TV and Movie content hosted on Netflix. The SQL code I have written answers a few questions I came up with after viewing the dataset.
 # It is written using PostgreSQL dialect and the data is from the following Netflix datasets:
 
 CREATE TABLE netflix_titles_info
