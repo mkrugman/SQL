@@ -3,7 +3,7 @@ In this case study, I will demonstrate how SQL can help answer a key business qu
 
 #The question asked by the company: What are some trends in smart device usage?
 
-Here are the SQL codes I wrote that could be helpful in answering this question:
+Here are the SQL codes that could be helpful in answering this question:
 
 --Finding the average amount of minutes reported for each type of activity
 
